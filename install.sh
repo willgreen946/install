@@ -10,7 +10,7 @@ DOAS="permit will as root"
 PKG="pkg install -y"
 
 # Change these to packages you want installed
-PKGS="neovim vifm zathura zathura-pdf-mupdf htop wayland seatd foot wget doas curl librewolf"  
+PKGS="neovim vifm zathura zathura-pdf-mupdf tuifeed htop wayland seatd foot wget doas curl librewolf"  
 
 # Dotfiles
 exec git clone https://github.com/africavoid/dwl &
