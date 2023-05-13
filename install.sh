@@ -10,7 +10,7 @@ DOAS="permit will as root"
 PKG="pkg install -y"
 
 # Change these to packages you want installed
-PKGS="neovim vifm zathura zathura-pdf-mupdf tuifeed htop wayland seatd foot wget doas curl librewolf"  
+PKGS="drm-kmod mixertui wlroots evdev-proto libinput pkgconf neovim vifm zathura zathura-pdf-mupdf tuifeed htop wayland seatd foot wget doas curl librewolf"  
 
 # Dotfiles
 exec git clone https://github.com/africavoid/dwl &
@@ -33,7 +33,7 @@ exec cp dots/bat.sh /home$USER/bat.sh &
 
 # doas config
 exec touch /etc/doas.conf &
-exec echo "$DOAS" > /etc/doas.conf &
+exec echo "$DOAS" > /usr/local/etc/doas.conf &
 
 # Since you must run as root we are changing file permissions
 exec chmod 777 dwl/ &
@@ -50,6 +50,4 @@ exec $PKG $PKGS &
 
 # oh my zsh
 # run manually
-# sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-
-printf "\nInstallation complete now you must compile dwl, somebar and run oh-myzsh manually\n"
+ sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
