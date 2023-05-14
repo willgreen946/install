@@ -11,7 +11,7 @@ DOASDIR="/usr/local/etc/doas.conf"
 PKG="pkg install -y"
 
 # Change these to packages you want installed
-PKGS="drm-kmod mixertui wlroots evdev-proto libinput pkgconf neovim vifm zathura zathura-pdf-mupdf tuifeed htop wayland seatd foot wget doas curl librewolf"  
+PKGS="drm-kmod mixertui chafa neofetch wlroots evdev-proto libinput pkgconf neovim vifm zathura zathura-pdf-mupdf tuifeed htop wayland seatd foot wget doas curl librewolf"  
 
 # Dotfiles
 exec git clone https://github.com/africavoid/dwl &
